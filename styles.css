@@ -1,0 +1,35 @@
+div{
+    width: 100px;
+    height: 100px;
+    margin: 0px;
+    border: 10px;
+    background-color: black;
+    /*transition.delay: 2a;*/
+    animation-name: doanimation;
+    animation-duration: 10;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    position: absolute;
+
+}
+
+@keyframes doanimation {
+    0%{
+        top: 0;
+        left: 0;
+
+    }
+    25%{
+        background-color: red;
+        top: 0;
+        left: 90%;
+    }
+    50%{
+        top: 90%;
+        left: 90%;
+    }
+    75%{
+        bottom: 90%;
+        left: 0;
+    }
+}
